@@ -160,4 +160,12 @@ use_parent_material = true
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAABAAAAAAAKAP//AAABAAAAAAAKAAAAAAABAAAAAAALAP//AAABAAAAAAALAAAAAAABAAAAAAALAP7/AAABAAAAAAAJAP//AAAAAAAAAAAKAP7/AAAAAAAAAAALAP3/AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_oglng")
 
+[node name="L1B_2" type="Button" parent="."]
+offset_left = 469.0
+offset_top = 376.0
+offset_right = 646.0
+offset_bottom = 448.0
+text = "GO TO MAZE 1"
+
 [connection signal="pressed" from="L1B_1" to="." method="_on_l_1b_1_pressed"]
+[connection signal="pressed" from="L1B_2" to="." method="_on_l_1b_2_pressed"]
