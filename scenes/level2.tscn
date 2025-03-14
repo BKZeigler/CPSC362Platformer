@@ -27,6 +27,6 @@ offset_left = 445.0
 offset_top = 431.0
 offset_right = 688.0
 offset_bottom = 522.0
-text = "GO TO  LEVEL 1"
+text = "GO TO  LEVEL 3"
 
 [connection signal="pressed" from="L2B1" to="." method="_on_l_2b_1_pressed"]
