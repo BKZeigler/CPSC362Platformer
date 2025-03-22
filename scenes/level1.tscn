@@ -167,5 +167,13 @@ offset_right = 646.0
 offset_bottom = 448.0
 text = "GO TO MAZE 1"
 
+[node name="L1B_3" type="Button" parent="."]
+offset_left = 227.0
+offset_top = 381.0
+offset_right = 411.0
+offset_bottom = 456.0
+text = "GO TO SIMON SAYS 1"
+
 [connection signal="pressed" from="L1B_1" to="." method="_on_l_1b_1_pressed"]
 [connection signal="pressed" from="L1B_2" to="." method="_on_l_1b_2_pressed"]
+[connection signal="pressed" from="L1B_3" to="." method="_on_l_1b_3_pressed"]

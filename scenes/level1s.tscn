@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://r6nx85y10xsx"]
+[gd_scene load_steps=5 format=3 uid="uid://r6nx85y10xsx"]
+
+[ext_resource type="Script" path="res://scripts/s_1.gd" id="1_l3yb7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvdci"]
 bg_color = Color(1, 0, 0, 1)
@@ -10,6 +12,7 @@ bg_color = Color(1, 1, 0, 1)
 bg_color = Color(0, 1, 0, 1)
 
 [node name="level1s" type="Node2D"]
+script = ExtResource("1_l3yb7")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1174.0
