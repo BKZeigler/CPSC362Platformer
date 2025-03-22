@@ -36,7 +36,7 @@ offset_right = 314.0
 offset_bottom = 1067.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_cvdci")
 
-[node name="Button3" type="Button" parent="ColorRect"]
+[node name="yellow" type="Button" parent="ColorRect"]
 offset_left = 471.0
 offset_top = 840.0
 offset_right = 695.0
