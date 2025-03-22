@@ -15,3 +15,21 @@ offset_bottom = 379.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "Simon Statement Goes Here"
+
+[node name="Button" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button2" type="Button" parent="ColorRect"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button3" type="Button" parent="ColorRect"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button4" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
