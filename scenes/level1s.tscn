@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://r6nx85y10xsx"]
+[gd_scene load_steps=3 format=3 uid="uid://r6nx85y10xsx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvdci"]
 bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xwam"]
+bg_color = Color(1, 1, 0, 1)
 
 [node name="level1s" type="Node2D"]
 
@@ -34,10 +37,11 @@ offset_bottom = 1067.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_cvdci")
 
 [node name="Button3" type="Button" parent="ColorRect"]
-offset_left = 37.0
-offset_top = 1.0
-offset_right = 45.0
-offset_bottom = 9.0
+offset_left = 471.0
+offset_top = 840.0
+offset_right = 695.0
+offset_bottom = 1064.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8xwam")
 
 [node name="Button4" type="Button" parent="ColorRect"]
 layout_mode = 0
