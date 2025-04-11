@@ -38,6 +38,7 @@ theme_override_font_sizes/font_size = 32
 text = "RESTART"
 
 [node name="red" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 91.0
 offset_top = 844.0
 offset_right = 314.0
@@ -45,6 +46,7 @@ offset_bottom = 1067.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_cvdci")
 
 [node name="yellow" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 471.0
 offset_top = 840.0
 offset_right = 695.0
