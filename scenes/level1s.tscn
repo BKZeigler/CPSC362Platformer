@@ -60,3 +60,7 @@ offset_top = 853.0
 offset_right = 1081.0
 offset_bottom = 1075.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_qey8t")
+
+[node name="click count" type="Label" parent="ColorRect"]
+offset_right = 40.0
+offset_bottom = 23.0
