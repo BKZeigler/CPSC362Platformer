@@ -22,6 +22,10 @@ var timer_running = false
 
 func _ready():
 	randomize()
+	
+	# Set popup label font color to black
+	popup_label.add_theme_color_override("font_color", Color.BLACK)
+	
 	restart_s.pressed.connect(_on_restart_pressed)
 	red.pressed.connect(_on_red_pressed)
 	yellow.pressed.connect(_on_yellow_pressed)
