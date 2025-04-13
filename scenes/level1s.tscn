@@ -72,8 +72,13 @@ text = "Clicks:"
 
 [node name="click count" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 377.0
+offset_top = 84.0
+offset_right = 738.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(0.639216, 0.294118, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "click count display here"
 
 [node name="timer title" type="Label" parent="ColorRect"]
 layout_mode = 0
@@ -87,10 +92,10 @@ text = "Time:"
 
 [node name="timer" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_left = 367.0
-offset_top = 26.0
-offset_right = 689.0
-offset_bottom = 71.0
+offset_left = 368.0
+offset_top = 27.0
+offset_right = 690.0
+offset_bottom = 72.0
 theme_override_colors/font_color = Color(0, 0, 1, 1)
 theme_override_font_sizes/font_size = 32
 text = "seconds display here"
