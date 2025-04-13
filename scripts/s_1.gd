@@ -6,7 +6,7 @@ extends Node2D
 @onready var yellow: Button = $ColorRect/yellow
 @onready var green: Button = $ColorRect/green
 @onready var click_count_label: Label = $"ColorRect/click count"
-@onready var timer: Label = $ColorRect/timer
+@onready var timer_label: Label = $ColorRect/timer
 @onready var pop_up_message: Label = $"ColorRect/pop up message"
 
 var statements = [
