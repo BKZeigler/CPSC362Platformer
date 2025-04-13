@@ -6,6 +6,7 @@ extends Node2D
 @onready var yellow: Button = $ColorRect/yellow
 @onready var green: Button = $ColorRect/green
 
+
 var statements = [
 	"Click Red",
 	"Click Yellow",
