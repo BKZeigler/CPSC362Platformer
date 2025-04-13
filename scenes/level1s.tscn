@@ -62,10 +62,16 @@ offset_bottom = 1075.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_qey8t")
 
 [node name="click count" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="timer title" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 273.0
+offset_top = 29.0
+offset_right = 358.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Time:"
