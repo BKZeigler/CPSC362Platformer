@@ -1,6 +1,10 @@
 [gd_scene load_steps=22 format=4 uid="uid://de00608qxlrje"]
 
+
+[ext_resource type="Script" uid="uid://duiec35n84yxg" path="res://scripts/Level1.gd" id="1_c6e8k"]
+
 [ext_resource type="Script" uid="uid://bbl01hb5ques" path="res://scripts/Level1.gd" id="1_c6e8k"]
+
 [ext_resource type="Texture2D" uid="uid://bbolxcjmu6jt7" path="res://assets/sprites/world_tileset.png" id="2_qf7fb"]
 [ext_resource type="PackedScene" uid="uid://cujtg4olsctvv" path="res://platform.tscn" id="3_m7ahb"]
 

@@ -1,3 +1,100 @@
-[gd_scene format=3 uid="uid://dva212bspjlw5"]
+[gd_scene load_steps=4 format=3 uid="uid://dva212bspjlw5"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://bk43de48vybop" path="res://scenes/level_1c.gd" id="1_y6idm"]
+[ext_resource type="FontFile" uid="uid://dan0yss8ns3a6" path="res://Font/SpaceMono-Bold.ttf" id="2_tfuae"]
+[ext_resource type="FontFile" uid="uid://cqhplgjilkvkk" path="res://Font/SpaceMono-Regular.ttf" id="3_mslnr"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_y6idm")
+
+[node name="bg1" type="ColorRect" parent="."]
+offset_right = 1170.0
+offset_bottom = 669.0
+color = Color(0, 0, 0, 1)
+
+[node name="bg2" type="ColorRect" parent="bg1"]
+offset_left = 21.0
+offset_top = 18.0
+offset_right = 1145.0
+offset_bottom = 645.0
+color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[node name="prompt" type="RichTextLabel" parent="bg1/bg2"]
+layout_mode = 0
+offset_top = 42.0
+offset_right = 1128.0
+offset_bottom = 111.0
+theme_override_fonts/normal_font = ExtResource("2_tfuae")
+theme_override_fonts/bold_font = ExtResource("2_tfuae")
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[center] Decipher this code."
+
+[node name="ciphertext" type="RichTextLabel" parent="bg1/bg2"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 2.0
+offset_top = 116.0
+offset_right = 1133.0
+offset_bottom = 179.0
+theme_override_fonts/normal_font = ExtResource("2_tfuae")
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[center] \"some type of ciphertext here\""
+
+[node name="wrongMsg" type="RichTextLabel" parent="bg1/bg2"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 214.0
+offset_right = 1126.0
+offset_bottom = 291.0
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_mslnr")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center]Wrong... try again:("
+
+[node name="correctMsg" type="RichTextLabel" parent="bg1/bg2"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 214.0
+offset_right = 1127.0
+offset_bottom = 293.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_mslnr")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center]Correct... move on to the next level :)"
+
+[node name="inputbox" type="ColorRect" parent="."]
+offset_left = 250.0
+offset_top = 333.0
+offset_right = 930.0
+offset_bottom = 440.0
+color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[node name="LineEdit" type="LineEdit" parent="inputbox"]
+layout_mode = 0
+offset_right = 680.0
+offset_bottom = 108.0
+
+[node name="submit" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 470.0
+offset_right = 727.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("2_tfuae")
+theme_override_font_sizes/font_size = 20
+text = "Submit"
+
+[node name="nextLevel" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 469.0
+offset_right = 726.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("2_tfuae")
+theme_override_font_sizes/font_size = 20
+text = "Next Level"
+
+[connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="nextLevel" to="." method="_on_next_level_pressed"]
