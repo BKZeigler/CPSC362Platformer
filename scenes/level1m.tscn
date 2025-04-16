@@ -1,5 +1,8 @@
 [gd_scene load_steps=9 format=4 uid="uid://dw0lpc7ah7d4h"]
 
+
+[ext_resource type="Script" uid="uid://cfnlw4utn0jss" path="res://scripts/maze_1.gd" id="1_vf2m0"]
+
 [ext_resource type="Script" path="res://scripts/maze_1.gd" id="1_vf2m0"]
 [ext_resource type="Texture2D" uid="uid://bbolxcjmu6jt7" path="res://assets/sprites/world_tileset.png" id="2_2k5lb"]
 [ext_resource type="PackedScene" uid="uid://bxe4h3todxeh0" path="res://scenes/player.tscn" id="3_ivmpv"]
