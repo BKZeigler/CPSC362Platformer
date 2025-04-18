@@ -1,5 +1,8 @@
 extends CanvasLayer
 
+signal level_changed(level_name)
+@export () var level_name = ""
+
 @onready var line_edit = $inputbox/LineEdit
 @onready var next_level = $nextLevel
 @onready var fail_msg = $bg1/bg2/correctMsg
@@ -8,7 +11,7 @@ extends CanvasLayer
 @onready var submit_button = $submit
 
 
-var password = "test"
+var password = "password"
 
 func _ready():
 	print("code is running")
@@ -41,3 +44,6 @@ func _on_submit_pressed() -> void:
 func _on_next_level_pressed() -> void:
 	print("next level button pressed")
 	#idk what to do here
+
+func _on_button_pressed() -> void:
+	emit_signal("level_changed", level_name)

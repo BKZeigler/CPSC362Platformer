@@ -1,5 +1,7 @@
 extends Node2D
 
+signal level_changed(level_name)
+@export () var level_name = "level1s"
 @onready var statement: Label = $ColorRect/statement
 @onready var restart_s: Button = $"ColorRect/restart s"
 @onready var red: Button = $ColorRect/red
@@ -63,7 +65,7 @@ func update_click_count():
 
 func end_game():
 	if click_count >= 20:
-		popup_label.text = "🎉 You Win!"
+		popup_label.text = "🎉 You Win (The Key is 3)!"
 	else:
 		popup_label.text = "⏱️ Time's Up! Try Again"
 	popup_label.visible = true
@@ -85,3 +87,7 @@ func _on_green_pressed():
 
 func _on_restart_pressed():
 	start_game()
+	
+func _on_exit_pressed() -> void:
+	print("exit pressed")
+	emit_signal("level_changed", level_name)

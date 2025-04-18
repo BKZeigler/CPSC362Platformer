@@ -6,6 +6,7 @@
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_y6idm")
+level_name = "level1c"
 
 [node name="bg1" type="ColorRect" parent="."]
 offset_right = 1170.0
@@ -13,6 +14,7 @@ offset_bottom = 669.0
 color = Color(0, 0, 0, 1)
 
 [node name="bg2" type="ColorRect" parent="bg1"]
+layout_mode = 0
 offset_left = 21.0
 offset_top = 18.0
 offset_right = 1145.0
@@ -40,9 +42,10 @@ offset_bottom = 179.0
 theme_override_fonts/normal_font = ExtResource("2_tfuae")
 theme_override_font_sizes/normal_font_size = 45
 bbcode_enabled = true
-text = "[center] \"some type of ciphertext here\""
+text = "[center] \"sdvvzrug\""
 
 [node name="wrongMsg" type="RichTextLabel" parent="bg1/bg2"]
+visible = false
 layout_mode = 0
 offset_left = -2.0
 offset_top = 214.0
@@ -55,6 +58,7 @@ bbcode_enabled = true
 text = "[center]Wrong... try again:("
 
 [node name="correctMsg" type="RichTextLabel" parent="bg1/bg2"]
+visible = false
 layout_mode = 0
 offset_left = -2.0
 offset_top = 214.0
@@ -96,5 +100,13 @@ theme_override_fonts/font = ExtResource("2_tfuae")
 theme_override_font_sizes/font_size = 20
 text = "Next Level"
 
+[node name="Button" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 154.0
+offset_bottom = 107.0
+text = "Click Here to Exit"
+
 [connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]
 [connection signal="pressed" from="nextLevel" to="." method="_on_next_level_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
