@@ -17,7 +17,13 @@ func handle_level_changed(current_level_name: String):
 			next_level_name = "1m"
 		"one_s":
 			next_level_name = "1s"
+		"one_c":
+			next_level_name = "1c"
 		"level1m":
+			next_level_name = "1"
+		"level1s":
+			next_level_name = "1"
+		"level1c":
 			next_level_name = "1"
 		"two":
 			next_level_name = "3"

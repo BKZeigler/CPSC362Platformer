@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://r6nx85y10xsx"]
 
-[ext_resource type="Script" path="res://scripts/s_1.gd" id="1_l3yb7"]
+[ext_resource type="Script" uid="uid://cejphs525pv0g" path="res://scripts/s_1.gd" id="1_l3yb7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvdci"]
 bg_color = Color(1, 0, 0, 1)
@@ -62,6 +62,7 @@ offset_bottom = 665.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_qey8t")
 
 [node name="click count title" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 272.0
 offset_top = 82.0
 offset_right = 369.0
@@ -109,3 +110,13 @@ offset_bottom = 231.0
 theme_override_colors/font_color = Color(0.784314, 0, 0.686275, 1)
 theme_override_font_sizes/font_size = 60
 text = "Puzzle Status"
+
+[node name="exit" type="Button" parent="."]
+offset_left = 933.0
+offset_top = 63.0
+offset_right = 1129.0
+offset_bottom = 242.0
+theme_override_font_sizes/font_size = 32
+text = "EXIT"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
